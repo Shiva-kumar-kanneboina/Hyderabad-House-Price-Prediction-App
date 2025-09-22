@@ -25,4 +25,5 @@ input_df = pd.DataFrame([[loc, sqft, bed, bath, dining]],
 if st.button('Predict Price'):
     output = model.predict(input_df)
     predicted_price =int(output[0])
-    st.success(f"The predicted price of the house is Rs.{predicted_price}/-")
+    st.success(f"The predicted price of the house is {predicted_price}/- INR")
+
